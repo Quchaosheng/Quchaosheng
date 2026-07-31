@@ -56,8 +56,10 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 > 以下列表由 GitHub Actions 自动同步；新建公开仓库后会自动加入。
 
 <!-- ALL_PROJECTS:START -->
-- [ros2-apriltag-docking-demo](https://github.com/Quchaosheng/ros2-apriltag-docking-demo)
-- [Quchaosheng.github.io](https://github.com/Quchaosheng/Quchaosheng.github.io)
+- [Quchaosheng.github.io](https://github.com/Quchaosheng/Quchaosheng.github.io) · `HTML`  
+  Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.
+- [ros2-apriltag-docking-demo](https://github.com/Quchaosheng/ros2-apriltag-docking-demo) · `Python`  
+  A reproducible ROS 2 visual docking workflow for TurtleBot3 using apriltag_ros, Nav2 Docking, Gazebo, and guarded AprilTag validation.
 <!-- ALL_PROJECTS:END -->
 
 ## 工具与技术

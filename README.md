@@ -51,6 +51,15 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 实现 `ros2_control` 硬件接口与 SocketCAN 双虚拟电机链路，覆盖 ACK、编码器反馈、看门狗、故障注入和确定性失败终态。  
 `ROS 2 Humble` · `C++17` · `ros2_control` · `SocketCAN`
 
+## 其他公开项目
+
+> 以下列表由 GitHub Actions 自动同步；新建公开仓库后会自动加入。
+
+<!-- ALL_PROJECTS:START -->
+- [ros2-apriltag-docking-demo](https://github.com/Quchaosheng/ros2-apriltag-docking-demo)
+- [Quchaosheng.github.io](https://github.com/Quchaosheng/Quchaosheng.github.io)
+<!-- ALL_PROJECTS:END -->
+
 ## 工具与技术
 
 <p>

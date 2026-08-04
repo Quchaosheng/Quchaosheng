@@ -26,13 +26,13 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 （ROS 2 / eBPF / CAN 关联，证据不足时拒绝下结论）、RISC-V 系统
 （7+1 hart 双域隔离，访问拒绝经故障探针实测）。
 
-每个仓库都有独立的验证边界章节，明确区分软件证据与硬件证据。
+核心项目仓库都有独立的验证边界章节，明确区分软件证据与硬件证据。
 
 ## 关于我
 
 我关注机器人软件中最不应该模糊的三件事：**任务如何确定地执行、异常如何被证据定位、系统边界如何被验证**。
 
-- 独立开发 ROS 2 任务运行时、跨层追踪优化工具和 RISC-V64 系统项目。
+- 个人项目覆盖 ROS 2 任务运行时、跨层追踪优化工具和 RISC-V64 系统。
 - 主要使用 C++、Python、ROS 2 与 Linux，工作范围覆盖任务编排、设备桥接、运行时追踪、内核与网络协议栈。
 - 重视可复现测试、失败终态、取消语义与验证边界；实现了什么、验证到哪里，尽量让仓库本身可以回答。
 
@@ -50,7 +50,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 ### [quard-star-riscv64-net](https://github.com/Quchaosheng/quard-star-riscv64-net)
 
-独立实现面向 QEMU quard-star 的 RISC-V64 系统：包含 7-hart SMP 内核、独立 FreeRTOS trusted hart、Sv39、PMP、VirtIO、文件系统与自研 TCP/IP 链路。  
+个人项目：面向 QEMU quard-star 的 RISC-V64 系统，包含 7-hart SMP 内核、独立 FreeRTOS trusted hart、Sv39、VirtIO、文件系统与自研 TCP/IP 链路；我编写 OpenSBI domain DTS 声明资源边界，并用自建 fault probe 验证 PMP 双向访问拒绝。<br>
 `C` · `RISC-V` · `OpenSBI` · `FreeRTOS` · `QEMU`
 
 ### [ros2-control-vcan-motor-demo](https://github.com/Quchaosheng/ros2-control-vcan-motor-demo)

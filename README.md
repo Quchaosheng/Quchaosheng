@@ -7,7 +7,7 @@
 
 # 你好，我是渠超胜 | Quchaosheng
 
-**Independent Robot Systems Developer**
+**Robot Systems Developer**
 
 Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
@@ -20,6 +20,13 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 </div>
 
 ---
+
+我做机器人系统软件，重点是让“任务是否真的执行了”这件事有证据支撑。
+三个方向：确定性任务运行时（取消与设备确认不可绕过）、跨层证据准入
+（ROS 2 / eBPF / CAN 关联，证据不足时拒绝下结论）、RISC-V 系统
+（7+1 hart 双域隔离，访问拒绝经故障探针实测）。
+
+每个仓库都有独立的验证边界章节，明确区分软件证据与硬件证据。
 
 ## 关于我
 

@@ -63,6 +63,8 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 > 以下列表由 GitHub Actions 自动同步；新建公开仓库后会自动加入。
 
 <!-- ALL_PROJECTS:START -->
+- [workbench-desk-robot](https://github.com/Quchaosheng/workbench-desk-robot) · `Python`  
+  A reproducible desktop robot arm simulation where task completion must be verified, not assumed. Language → constrained TaskGraph → grasp/place → WorldState verification. Refuses to report success without evidence. ROS 2 Jazzy · Gazebo Harmonic · MoveIt 2.
 - [ros2-apriltag-docking-demo](https://github.com/Quchaosheng/ros2-apriltag-docking-demo) · `Python`  
   AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start.
 - [Quchaosheng.github.io](https://github.com/Quchaosheng/Quchaosheng.github.io) · `HTML`  

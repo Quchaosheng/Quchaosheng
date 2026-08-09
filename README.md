@@ -60,13 +60,13 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 <!-- ALL_PROJECTS:START -->
 <details>
-<summary><a href="https://github.com/Quchaosheng/ros2-control-vcan-motor-demo"><strong>ros2-control-vcan-motor-demo</strong></a> · <code>C++</code></summary>
-<br>ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level.
+<summary><a href="https://github.com/Quchaosheng/workbench-desk-robot"><strong>workbench-desk-robot</strong></a> · <code>Python</code></summary>
+<br>A reproducible desktop robot arm simulation where task completion must be verified, not assumed. Language → constrained TaskGraph → grasp/place → WorldState verification. Refuses to report success without evidence. ROS 2 Jazzy · Gazebo Harmonic · MoveIt 2.
 </details>
 
 <details>
-<summary><a href="https://github.com/Quchaosheng/workbench-desk-robot"><strong>workbench-desk-robot</strong></a> · <code>Python</code></summary>
-<br>A reproducible desktop robot arm simulation where task completion must be verified, not assumed. Language → constrained TaskGraph → grasp/place → WorldState verification. Refuses to report success without evidence. ROS 2 Jazzy · Gazebo Harmonic · MoveIt 2.
+<summary><a href="https://github.com/Quchaosheng/ros2-control-vcan-motor-demo"><strong>ros2-control-vcan-motor-demo</strong></a> · <code>C++</code></summary>
+<br>ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level.
 </details>
 
 <details>

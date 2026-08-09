@@ -59,12 +59,25 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 > 以下列表由 GitHub Actions 自动同步；新建公开仓库后会自动加入。
 
 <!-- ALL_PROJECTS:START -->
-| 项目 | 技术 | 一句话说明 |
-| :--- | :---: | :--- |
-| [ros2-apriltag-docking-demo](https://github.com/Quchaosheng/ros2-apriltag-docking-demo) | `Python` | AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start. |
-| [workbench-desk-robot](https://github.com/Quchaosheng/workbench-desk-robot) | `Python` | A reproducible desktop robot arm simulation where task completion must be verified, not assumed. Language → constrained TaskGraph → grasp/place → WorldState verification. Refuses to report success without evidence. ROS 2 Jazzy · Gazebo Harmonic · MoveIt 2. |
-| [ros2-control-vcan-motor-demo](https://github.com/Quchaosheng/ros2-control-vcan-motor-demo) | `C++` | ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level. |
-| [Quchaosheng.github.io](https://github.com/Quchaosheng/Quchaosheng.github.io) | `HTML` | Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics. |
+<details>
+<summary><a href="https://github.com/Quchaosheng/ros2-apriltag-docking-demo"><strong>ros2-apriltag-docking-demo</strong></a> · <code>Python</code></summary>
+<br>AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start.
+</details>
+
+<details>
+<summary><a href="https://github.com/Quchaosheng/workbench-desk-robot"><strong>workbench-desk-robot</strong></a> · <code>Python</code></summary>
+<br>A reproducible desktop robot arm simulation where task completion must be verified, not assumed. Language → constrained TaskGraph → grasp/place → WorldState verification. Refuses to report success without evidence. ROS 2 Jazzy · Gazebo Harmonic · MoveIt 2.
+</details>
+
+<details>
+<summary><a href="https://github.com/Quchaosheng/ros2-control-vcan-motor-demo"><strong>ros2-control-vcan-motor-demo</strong></a> · <code>C++</code></summary>
+<br>ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level.
+</details>
+
+<details>
+<summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a> · <code>HTML</code></summary>
+<br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.
+</details>
 <!-- ALL_PROJECTS:END -->
 
 ## 工具与技术

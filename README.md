@@ -60,8 +60,8 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 <!-- ALL_PROJECTS:START -->
 <details>
-<summary><a href="https://github.com/Quchaosheng/ros2-apriltag-docking-demo"><strong>ros2-apriltag-docking-demo</strong></a> · <code>Python</code></summary>
-<br>AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start.
+<summary><a href="https://github.com/Quchaosheng/ros2-control-vcan-motor-demo"><strong>ros2-control-vcan-motor-demo</strong></a> · <code>C++</code></summary>
+<br>ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level.
 </details>
 
 <details>
@@ -70,8 +70,8 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 </details>
 
 <details>
-<summary><a href="https://github.com/Quchaosheng/ros2-control-vcan-motor-demo"><strong>ros2-control-vcan-motor-demo</strong></a> · <code>C++</code></summary>
-<br>ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level.
+<summary><a href="https://github.com/Quchaosheng/ros2-apriltag-docking-demo"><strong>ros2-apriltag-docking-demo</strong></a> · <code>Python</code></summary>
+<br>AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start.
 </details>
 
 <details>

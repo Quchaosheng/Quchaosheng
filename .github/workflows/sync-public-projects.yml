@@ -28,11 +28,10 @@ jobs:
             const fs = require('fs');
             const start = '<!-- ALL_PROJECTS:START -->';
             const end = '<!-- ALL_PROJECTS:END -->';
-            const featured = new Set([
+            const coreProjects = new Set([
               'embodied-agent-runtime',
               'RoboTraceOpt',
               'quard-star-riscv64-net',
-              'ros2-control-vcan-motor-demo',
             ]);
 
             const repos = await github.paginate(
@@ -46,22 +45,32 @@ jobs:
               },
             );
 
+            const escapeTableCell = (value) => value
+              .replace(/\\/g, '\\\\')
+              .replace(/\|/g, '\\|');
+
             const projects = repos
               .filter((repo) => repo.visibility === 'public')
               .filter((repo) => repo.name !== context.repo.repo)
-              .filter((repo) => !featured.has(repo.name))
+              .filter((repo) => !coreProjects.has(repo.name))
               .map((repo) => {
                 const description = (repo.description || '')
                   .replace(/\s+/g, ' ')
                   .trim();
-                const language = repo.language ? ` · \`${repo.language}\`` : '';
-                const summary = description ? `  \n  ${description}` : '';
-                return `- [${repo.name}](${repo.html_url})${language}${summary}`;
+                const language = repo.language
+                  ? `\`${escapeTableCell(repo.language)}\``
+                  : '—';
+                const summary = description
+                  ? escapeTableCell(description)
+                  : '—';
+                return `| [${escapeTableCell(repo.name)}](${repo.html_url}) | ${language} | ${summary} |`;
               });
 
             const block = [
               start,
-              projects.length ? projects.join('\n') : '- 暂无其他公开项目',
+              '| 项目 | 技术 | 一句话说明 |',
+              '| :--- | :---: | :--- |',
+              projects.length ? projects.join('\n') : '| 暂无其他公开项目 | — | — |',
               end,
             ].join('\n');
 

@@ -60,13 +60,13 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 <!-- ALL_PROJECTS:START -->
 <details>
-<summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a> · <code>HTML</code></summary>
-<br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.
+<summary><a href="https://github.com/Quchaosheng/workbench-desk-robot"><strong>workbench-desk-robot</strong></a> · <code>Python</code></summary>
+<br>A reproducible desktop robot arm simulation where task completion must be verified, not assumed. Language → constrained TaskGraph → grasp/place → WorldState verification. Refuses to report success without evidence. ROS 2 Jazzy · Gazebo Harmonic · MoveIt 2.
 </details>
 
 <details>
-<summary><a href="https://github.com/Quchaosheng/workbench-desk-robot"><strong>workbench-desk-robot</strong></a> · <code>Python</code></summary>
-<br>A reproducible desktop robot arm simulation where task completion must be verified, not assumed. Language → constrained TaskGraph → grasp/place → WorldState verification. Refuses to report success without evidence. ROS 2 Jazzy · Gazebo Harmonic · MoveIt 2.
+<summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a> · <code>HTML</code></summary>
+<br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.
 </details>
 
 <details>

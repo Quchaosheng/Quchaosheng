@@ -89,7 +89,6 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
   <img src="https://img.shields.io/badge/Linux-Systems-FCC624?style=flat-square&logo=linux&logoColor=111111" alt="Linux systems">
   <img src="https://img.shields.io/badge/CMake-Build-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake">
   <img src="https://img.shields.io/badge/SocketCAN-CAN-3C873A?style=flat-square" alt="SocketCAN">
-  <img src="https://img.shields.io/badge/SQLite-History-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
 </p>
 
 ## 工程记录

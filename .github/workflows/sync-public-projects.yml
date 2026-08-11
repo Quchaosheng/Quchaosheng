@@ -32,6 +32,15 @@ jobs:
               'embodied-agent-runtime',
               'RoboTraceOpt',
               'quard-star-riscv64-net',
+              'workbench-desk-robot',
+            ]);
+            const excludedProjects = new Set([
+              'FuckJob-fix-backup',
+            ]);
+            const projectStacks = new Map([
+              ['Quchaosheng.github.io', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages']],
+              ['ros2-control-vcan-motor-demo', ['C++17', 'ROS 2 Humble', 'ros2_control', 'SocketCAN', 'launch_testing']],
+              ['ros2-apriltag-docking-demo', ['Python 3', 'ROS 2 Jazzy', 'Nav2 Docking', 'AprilTag', 'Gazebo Harmonic']],
             ]);
 
             const repos = await github.paginate(
@@ -52,23 +61,51 @@ jobs:
               .replace(/"/g, '&quot;')
               .replace(/'/g, '&#39;');
 
-            const projects = repos
+            const getProjectStack = async (repo) => {
+              const curatedStack = projectStacks.get(repo.name);
+              if (curatedStack) {
+                return curatedStack;
+              }
+
+              const { data: languages } = await github.rest.repos.listLanguages({
+                owner: context.repo.owner,
+                repo: repo.name,
+              });
+              const detectedLanguages = Object.entries(languages)
+                .sort(([, leftBytes], [, rightBytes]) => rightBytes - leftBytes)
+                .slice(0, 4)
+                .map(([language]) => language);
+              return detectedLanguages.length
+                ? detectedLanguages
+                : [repo.language || '未标注'];
+            };
+
+            const visibleRepos = repos
               .filter((repo) => repo.visibility === 'public')
+              .filter((repo) => !repo.archived && !repo.fork)
               .filter((repo) => repo.name !== context.repo.repo)
               .filter((repo) => !coreProjects.has(repo.name))
-              .map((repo) => {
+              .filter((repo) => !excludedProjects.has(repo.name));
+
+            const projects = await Promise.all(
+              visibleRepos.map(async (repo) => {
                 const description = (repo.description || '')
                   .replace(/\s+/g, ' ')
                   .trim();
-                const language = repo.language || '未标注';
                 const summary = description || '暂无仓库简介。';
+                const stack = await getProjectStack(repo);
+                const stackMarkup = stack
+                  .map((item) => `<code>${escapeHtml(item)}</code>`)
+                  .join(' · ');
                 return [
                   '<details>',
-                  `<summary><a href="${repo.html_url}"><strong>${escapeHtml(repo.name)}</strong></a> · <code>${escapeHtml(language)}</code></summary>`,
-                  `<br>${escapeHtml(summary)}`,
+                  `<summary><a href="${repo.html_url}"><strong>${escapeHtml(repo.name)}</strong></a></summary>`,
+                  `<br>${escapeHtml(summary)}<br>`,
+                  stackMarkup,
                   '</details>',
                 ].join('\n');
-              });
+              }),
+            );
 
             const block = [
               start,

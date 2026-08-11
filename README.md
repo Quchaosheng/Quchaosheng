@@ -66,9 +66,9 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 <!-- ALL_PROJECTS:START -->
 <details>
-<summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a></summary>
-<br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.<br>
-<code>HTML</code> · <code>CSS</code> · <code>JavaScript</code> · <code>GitHub Pages</code>
+<summary><a href="https://github.com/Quchaosheng/ros2-control-vcan-motor-demo"><strong>ros2-control-vcan-motor-demo</strong></a></summary>
+<br>ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level.<br>
+<code>C++17</code> · <code>ROS 2 Humble</code> · <code>ros2_control</code> · <code>SocketCAN</code> · <code>launch_testing</code>
 </details>
 
 <details>
@@ -78,9 +78,9 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 </details>
 
 <details>
-<summary><a href="https://github.com/Quchaosheng/ros2-control-vcan-motor-demo"><strong>ros2-control-vcan-motor-demo</strong></a></summary>
-<br>ros2_control hardware interface over SocketCAN with 7 deterministic fault injectors; launch tests assert the safe-stop frame count upper bound at the CAN byte level.<br>
-<code>C++17</code> · <code>ROS 2 Humble</code> · <code>ros2_control</code> · <code>SocketCAN</code> · <code>launch_testing</code>
+<summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a></summary>
+<br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.<br>
+<code>HTML</code> · <code>CSS</code> · <code>JavaScript</code> · <code>GitHub Pages</code>
 </details>
 <!-- ALL_PROJECTS:END -->
 

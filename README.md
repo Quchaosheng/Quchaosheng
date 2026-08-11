@@ -36,7 +36,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 - **确定性任务运行时：** 用固定工作流、截止时间、取消/恢复语义和设备确认约束任务执行。
 - **跨层可观测性：** 关联 ROS 2、Linux/eBPF 与 CAN 证据；证据不足时拒绝给出诊断结论。
 - **系统边界验证：** 从 RISC-V 多 hart 隔离到故障探针，区分配置声明、软件证据与硬件证据。
-- **工程栈：** C、C++、Python、ROS 2、Linux、SocketCAN、eBPF、RISC-V；重视可复现测试和明确的验证边界。
+- **工程栈：** C、C++、ROS 2、Linux、SocketCAN、eBPF、RISC-V；Python 主要用于编排、验证与工程工具。重视可复现测试和明确的验证边界。
 
 ## 核心项目
 
@@ -48,7 +48,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 ### [RoboTraceOpt](https://github.com/Quchaosheng/RoboTraceOpt)
 
 关联 RuntimeEvent、ROS 2 tracing 与 Linux 运行时证据，构建可审计的跨层诊断和受约束配置优化流程。<br>
-`Python` · `ROS 2` · `tracing` · `eBPF` · `evidence graph`
+`ROS 2` · `Linux tracing` · `eBPF` · `evidence graph` · `Python`
 
 ### [quard-star-riscv64-net](https://github.com/Quchaosheng/quard-star-riscv64-net)
 
@@ -58,7 +58,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 ### [workbench-desk-robot](https://github.com/Quchaosheng/workbench-desk-robot)
 
 面向桌面机器人任务验证的可复现工程：将语言请求约束为 TaskGraph，以追加式事件存储、确定性重放与三值验证区分“动作已发送”和“任务已完成”；证据不足时拒绝报告成功。当前提供脚本化运行时、SocketCAN 内核模块与 RISC-V 安全 MCU 脚手架，Gazebo / MoveIt 集成仍在推进。<br>
-`Python 3.12` · `C` · `ROS 2 Jazzy` · `JSON Schema` · `SocketCAN` · `RISC-V`
+`ROS 2 Jazzy` · `C` · `SocketCAN` · `RISC-V` · `JSON Schema` · `Python 3.12`
 
 ## 其他公开项目
 
@@ -74,7 +74,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 <details>
 <summary><a href="https://github.com/Quchaosheng/ros2-apriltag-docking-demo"><strong>ros2-apriltag-docking-demo</strong></a></summary>
 <br>AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start.<br>
-<code>Python 3</code> · <code>ROS 2 Jazzy</code> · <code>Nav2 Docking</code> · <code>AprilTag</code> · <code>Gazebo Harmonic</code>
+<code>ROS 2 Jazzy</code> · <code>Nav2 Docking</code> · <code>AprilTag</code> · <code>Gazebo Harmonic</code> · <code>Python 3</code>
 </details>
 
 <details>
@@ -89,13 +89,13 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 <p>
   <img src="https://img.shields.io/badge/C-Systems-A8B9CC?style=flat-square&logo=c&logoColor=111111" alt="C systems programming">
   <img src="https://img.shields.io/badge/C++-17-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++17">
-  <img src="https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3">
   <img src="https://img.shields.io/badge/ROS_2-Jazzy_%7C_Humble-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS 2 Jazzy and Humble">
   <img src="https://img.shields.io/badge/Linux-Systems-FCC624?style=flat-square&logo=linux&logoColor=111111" alt="Linux systems">
   <img src="https://img.shields.io/badge/CMake-Build-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake">
   <img src="https://img.shields.io/badge/SocketCAN-CAN-3C873A?style=flat-square" alt="SocketCAN">
   <img src="https://img.shields.io/badge/eBPF-Observability-E34F26?style=flat-square" alt="eBPF observability">
   <img src="https://img.shields.io/badge/RISC--V-Systems-283272?style=flat-square&logo=riscv&logoColor=white" alt="RISC-V systems">
+  <img src="https://img.shields.io/badge/Python-Tooling-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python tooling">
 </p>
 
 ## 工程记录

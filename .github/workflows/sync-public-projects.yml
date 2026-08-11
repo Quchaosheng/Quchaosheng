@@ -40,7 +40,7 @@ jobs:
             const projectStacks = new Map([
               ['Quchaosheng.github.io', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages']],
               ['ros2-control-vcan-motor-demo', ['C++17', 'ROS 2 Humble', 'ros2_control', 'SocketCAN', 'launch_testing']],
-              ['ros2-apriltag-docking-demo', ['Python 3', 'ROS 2 Jazzy', 'Nav2 Docking', 'AprilTag', 'Gazebo Harmonic']],
+              ['ros2-apriltag-docking-demo', ['ROS 2 Jazzy', 'Nav2 Docking', 'AprilTag', 'Gazebo Harmonic', 'Python 3']],
             ]);
 
             const repos = await github.paginate(

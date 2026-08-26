@@ -66,15 +66,15 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 <!-- ALL_PROJECTS:START -->
 <details>
-<summary><a href="https://github.com/Quchaosheng/job-search-automation-patches"><strong>job-search-automation-patches</strong></a></summary>
-<br>求职自动化工具的兼容性修复与实验补丁归档。<br>
-<code>Rust</code> · <code>TypeScript</code> · <code>HTML</code> · <code>CSS</code>
-</details>
-
-<details>
 <summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a></summary>
 <br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.<br>
 <code>HTML</code> · <code>CSS</code> · <code>JavaScript</code> · <code>GitHub Pages</code>
+</details>
+
+<details>
+<summary><a href="https://github.com/Quchaosheng/job-search-automation-patches"><strong>job-search-automation-patches</strong></a></summary>
+<br>求职自动化工具的兼容性修复与实验补丁归档。<br>
+<code>Rust</code> · <code>TypeScript</code> · <code>HTML</code> · <code>CSS</code>
 </details>
 
 <details>

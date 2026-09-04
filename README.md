@@ -66,6 +66,12 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 <!-- ALL_PROJECTS:START -->
 <details>
+<summary><a href="https://github.com/Quchaosheng/workbench-mobile-home-robot"><strong>workbench-mobile-home-robot</strong></a></summary>
+<br>Evidence-first runtime for a wheeled mobile household robot with bounded actions, replayable events, and fail-closed verification.<br>
+<code>Python</code> · <code>C</code> · <code>ANTLR</code> · <code>CSS</code>
+</details>
+
+<details>
 <summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a></summary>
 <br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.<br>
 <code>HTML</code> · <code>CSS</code> · <code>JavaScript</code> · <code>GitHub Pages</code>

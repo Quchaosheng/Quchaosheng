@@ -21,6 +21,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
   <a href="#能力重点">能力重点</a> ·
   <a href="#核心项目">核心项目</a> ·
   <a href="#其他公开项目">其他公开项目</a> ·
+  <a href="#开源项目贡献">开源项目贡献</a> ·
   <a href="#工具与技术">工具与技术</a> ·
   <a href="#工程记录">工程记录</a>
 </p>
@@ -55,22 +56,18 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 个人项目：面向 QEMU quard-star 的 RISC-V64 系统，包含 7-hart SMP 内核、独立 FreeRTOS trusted hart、Sv39、VirtIO、文件系统与自研 TCP/IP 链路；我编写 OpenSBI domain DTS 声明资源边界，并用自建 fault probe 验证 PMP 双向访问拒绝。<br>
 `C` · `RISC-V` · `OpenSBI` · `FreeRTOS` · `QEMU`
 
-### [workbench-desk-robot](https://github.com/Quchaosheng/workbench-desk-robot)
+### [workbench-mobile-home-robot](https://github.com/Quchaosheng/workbench-mobile-home-robot)
 
-面向桌面机器人任务验证的可复现工程：将语言请求约束为 TaskGraph，以追加式事件存储、确定性重放与三值验证区分“动作已发送”和“任务已完成”；证据不足时拒绝报告成功。当前提供脚本化运行时、SocketCAN 内核模块与 RISC-V 安全 MCU 脚手架，Gazebo / MoveIt 集成仍在推进。<br>
-`ROS 2 Jazzy` · `C` · `SocketCAN` · `RISC-V` · `JSON Schema` · `Python 3.12`
+[![GitHub stars](https://img.shields.io/github/stars/Quchaosheng/workbench-mobile-home-robot?style=flat-square)](https://github.com/Quchaosheng/workbench-mobile-home-robot/stargazers)
+
+个人项目：面向轮式移动家务机器人（VORA Home Robot）的证据优先运行时。将语言请求约束为受限动作词表，由受信执行器下发；以追加式事件存储与确定性重放重建状态，三值验证器明确区分「已确认 / 未满足 / 证据不足」——命令已发送不等于任务已完成，故障时 fail-closed，证据不足时拒绝报告成功。<br>
+`Python 3.12` · `SQLite` · `JSON Schema / Pydantic` · `确定性仿真` · `CI`
 
 ## 其他公开项目
 
 > 以下列表由 GitHub Actions 自动同步；新建的原创公开仓库会自动加入，并展示项目级技术栈或主要语言。
 
 <!-- ALL_PROJECTS:START -->
-<details>
-<summary><a href="https://github.com/Quchaosheng/workbench-mobile-home-robot"><strong>workbench-mobile-home-robot</strong></a></summary>
-<br>Evidence-first runtime for a wheeled mobile household robot with bounded actions, replayable events, and fail-closed verification.<br>
-<code>Python</code> · <code>C</code> · <code>ANTLR</code> · <code>CSS</code>
-</details>
-
 <details>
 <summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a></summary>
 <br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.<br>
@@ -89,6 +86,14 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 <code>ROS 2 Jazzy</code> · <code>Nav2 Docking</code> · <code>AprilTag</code> · <code>Gazebo Harmonic</code> · <code>Python 3</code>
 </details>
 <!-- ALL_PROJECTS:END -->
+
+## 开源项目贡献
+
+- **workbench-mobile-home-robot**：持续维护证据优先运行时、确定性重放与 fail-closed 验证链路，欢迎围绕移动家务机器人场景提交 Issue 和 Pull Request。
+- **Embodied Agent Runtime**：贡献 ROS 2 任务运行时、设备确认语义与 SocketCAN 桥接能力，优先完善可复现测试和跨层诊断证据。
+- **RoboTraceOpt**：贡献 ROS 2 tracing、Linux/eBPF 观测与证据图关联能力，推动“证据不足则不下结论”的工程实践。
+
+欢迎通过 Issue、Pull Request 或技术讨论参与这些项目，共同建设可验证、可复现的机器人系统软件。
 
 ## 工具与技术
 
@@ -109,7 +114,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 - [技术笔记与项目记录](https://quchaosheng.github.io/)
 - [ROS 2 task runtime architecture](https://github.com/Quchaosheng/embodied-agent-runtime#runtime-architecture)
 - [RISC-V64 system architecture and QEMU evidence](https://github.com/Quchaosheng/quard-star-riscv64-net#system-architecture)
-- [Workbench task verification and replay](https://github.com/Quchaosheng/workbench-desk-robot#core-contributions-kernel-engineering)
+- [Workbench task verification and replay](https://github.com/Quchaosheng/workbench-mobile-home-robot#why-workbench)
 
 <div align="center">
   <sub>Build the boundary. Trace the failure. Keep the evidence.</sub>

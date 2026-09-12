@@ -56,13 +56,6 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 个人项目：面向 QEMU quard-star 的 RISC-V64 系统，包含 7-hart SMP 内核、独立 FreeRTOS trusted hart、Sv39、VirtIO、文件系统与自研 TCP/IP 链路；我编写 OpenSBI domain DTS 声明资源边界，并用自建 fault probe 验证 PMP 双向访问拒绝。<br>
 `C` · `RISC-V` · `OpenSBI` · `FreeRTOS` · `QEMU`
 
-### [workbench-mobile-home-robot](https://github.com/Quchaosheng/workbench-mobile-home-robot)
-
-[![GitHub stars](https://img.shields.io/github/stars/Quchaosheng/workbench-mobile-home-robot?style=flat-square)](https://github.com/Quchaosheng/workbench-mobile-home-robot/stargazers)
-
-个人项目：面向轮式移动家务机器人（VORA Home Robot）的证据优先运行时。将语言请求约束为受限动作词表，由受信执行器下发；以追加式事件存储与确定性重放重建状态，三值验证器明确区分「已确认 / 未满足 / 证据不足」——命令已发送不等于任务已完成，故障时 fail-closed，证据不足时拒绝报告成功。<br>
-`Python 3.12` · `SQLite` · `JSON Schema / Pydantic` · `确定性仿真` · `CI`
-
 ## 其他公开项目
 
 > 以下列表由 GitHub Actions 自动同步；新建的原创公开仓库会自动加入，并展示项目级技术栈或主要语言。
@@ -95,11 +88,11 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 ## 开源项目贡献
 
-- **workbench-mobile-home-robot**：持续维护证据优先运行时、确定性重放与 fail-closed 验证链路，欢迎围绕移动家务机器人场景提交 Issue 和 Pull Request。
-- **Embodied Agent Runtime**：贡献 ROS 2 任务运行时、设备确认语义与 SocketCAN 桥接能力，优先完善可复现测试和跨层诊断证据。
-- **RoboTraceOpt**：贡献 ROS 2 tracing、Linux/eBPF 观测与证据图关联能力，推动“证据不足则不下结论”的工程实践。
+- **ROS 2 / ros2_control 生态**：关注任务运行时、硬件接口、设备确认与可复现 launch 测试，欢迎围绕真实机器人集成提交 Issue、文档改进和 Pull Request。
+- **Linux / eBPF / SocketCAN 工具链**：推动跨层观测、故障注入和证据关联，优先补充可复现样例与边界条件验证。
+- **RISC-V 与嵌入式软件**：分享系统边界验证、故障探针和资源隔离实践，帮助其他开源项目完善工程验证。
 
-欢迎通过 Issue、Pull Request 或技术讨论参与这些项目，共同建设可验证、可复现的机器人系统软件。
+欢迎通过 Issue、Pull Request 或技术讨论参与相关开源生态，共同建设可验证、可复现的机器人系统软件。
 
 ## 工具与技术
 

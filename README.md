@@ -88,12 +88,10 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 ## 开源项目贡献
 
-- **[ROS 2](https://github.com/ros2)**：参与机器人任务运行时、消息接口和可复现测试相关的生态建设。
-- **[ros2_control](https://github.com/ros-controls/ros2_control)**：围绕硬件接口、SocketCAN、电机控制和安全停机完善集成与测试。
-- **[Nav2](https://github.com/ros-navigation/navigation2)**：关注移动机器人导航、任务边界和运行时验证，贡献问题复现与文档改进。
-- **[Linux eBPF](https://github.com/libbpf/libbpf) / [SocketCAN](https://github.com/linux-can/can-utils)**：分享跨层观测、故障注入和证据关联实践。
+- **[ros2_control_demos #1198](https://github.com/ros-controls/ros2_control_demos/pull/1198)**：提交 Linux SocketCAN 差速移动底盘硬件接口示例（待审核）。
+- **[vision_opencv #571](https://github.com/ros-perception/vision_opencv/pull/571)**：提交 `cv_bridge` 的 CMake CMP0167 兼容性修复（待审核）。
 
-欢迎通过 Issue、Pull Request 或技术讨论参与这些外部开源项目，共同建设可验证、可复现的机器人系统软件。
+这里仅列出我在其他开源项目中实际提交过的 Pull Request；状态会随上游审核进度更新。
 
 ## 工具与技术
 

@@ -41,6 +41,12 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 
 ## 核心项目
 
+### [workbench-mobile-home-robot](https://github.com/Quchaosheng/workbench-mobile-home-robot)
+
+面向移动家庭机器人的核心工作台：以证据优先的任务运行时约束动作边界，记录可回放事件，并在验证证据不足时 fail-closed。<br>
+`Python` · `C` · `ANTLR` · `CSS`
+
+
 ### [Embodied Agent Runtime](https://github.com/Quchaosheng/embodied-agent-runtime)
 
 面向 ROS 2 的确定性任务运行时：使用固定工作流、嵌套 Action、截止时间、取消与恢复语义承接 AI 和感知输入，并提供设备桥接、任务历史与受限模型适配。<br>

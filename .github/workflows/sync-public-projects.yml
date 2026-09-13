@@ -32,6 +32,7 @@ jobs:
               'embodied-agent-runtime',
               'RoboTraceOpt',
               'quard-star-riscv64-net',
+              'workbench-mobile-home-robot',
               'workbench-desk-robot',
             ]);
             const excludedProjects = new Set([

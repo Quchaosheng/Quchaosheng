@@ -21,7 +21,6 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
   <a href="#能力重点">能力重点</a> ·
   <a href="#核心项目">核心项目</a> ·
   <a href="#其他公开项目">其他公开项目</a> ·
-  <a href="#开源项目贡献">开源项目贡献</a> ·
   <a href="#工具与技术">工具与技术</a> ·
   <a href="#工程记录">工程记录</a>
 </p>
@@ -85,13 +84,6 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 <code>ROS 2 Jazzy</code> · <code>Nav2 Docking</code> · <code>AprilTag</code> · <code>Gazebo Harmonic</code> · <code>Python 3</code>
 </details>
 <!-- ALL_PROJECTS:END -->
-
-## 开源项目贡献
-
-- **[ros2_control_demos #1198](https://github.com/ros-controls/ros2_control_demos/pull/1198)**：提交 Linux SocketCAN 差速移动底盘硬件接口示例（待审核）。
-- **[vision_opencv #571](https://github.com/ros-perception/vision_opencv/pull/571)**：提交 `cv_bridge` 的 CMake CMP0167 兼容性修复（待审核）。
-
-这里仅列出我在其他开源项目中实际提交过的 Pull Request；状态会随上游审核进度更新。
 
 ## 工具与技术
 

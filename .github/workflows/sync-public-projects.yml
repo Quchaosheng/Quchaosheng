@@ -33,10 +33,6 @@ jobs:
               'RoboTraceOpt',
               'quard-star-riscv64-net',
               'workbench-mobile-home-robot',
-              'workbench-desk-robot',
-            ]);
-            const excludedProjects = new Set([
-              'FuckJob-fix-backup',
             ]);
             const projectStacks = new Map([
               ['Quchaosheng.github.io', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages']],
@@ -85,8 +81,7 @@ jobs:
               .filter((repo) => repo.visibility === 'public')
               .filter((repo) => !repo.archived && !repo.fork)
               .filter((repo) => repo.name !== context.repo.repo)
-              .filter((repo) => !coreProjects.has(repo.name))
-              .filter((repo) => !excludedProjects.has(repo.name));
+              .filter((repo) => !coreProjects.has(repo.name));
 
             const projects = await Promise.all(
               visibleRepos.map(async (repo) => {

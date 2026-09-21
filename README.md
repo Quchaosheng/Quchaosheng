@@ -21,6 +21,7 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
   <a href="#能力重点">能力重点</a> ·
   <a href="#核心项目">核心项目</a> ·
   <a href="#其他公开项目">其他公开项目</a> ·
+  <a href="#上游开源">上游开源</a> ·
   <a href="#工具与技术">工具与技术</a> ·
   <a href="#工程记录">工程记录</a>
 </p>
@@ -84,6 +85,15 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 <code>HTML</code> · <code>CSS</code> · <code>JavaScript</code> · <code>GitHub Pages</code>
 </details>
 <!-- ALL_PROJECTS:END -->
+
+## 上游开源
+
+提交到其他开源项目的 Pull Request，均处于审核中、尚未合并：
+
+- [ros-controls/ros2_control_demos #1198](https://github.com/ros-controls/ros2_control_demos/pull/1198)：Linux SocketCAN 差速移动底盘硬件接口示例。
+- [ros-perception/vision_opencv #571](https://github.com/ros-perception/vision_opencv/pull/571)：`cv_bridge` 的 CMake CMP0167 兼容性修复。
+
+状态随上游审核进度更新；未合并的提交按提交而非已采纳贡献列出。
 
 ## 工具与技术
 

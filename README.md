@@ -74,15 +74,15 @@ Deterministic task runtimes · Cross-layer observability · RISC-V systems
 </details>
 
 <details>
-<summary><a href="https://github.com/Quchaosheng/ros2-apriltag-docking-demo"><strong>ros2-apriltag-docking-demo</strong></a></summary>
-<br>AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start.<br>
-<code>ROS 2 Jazzy</code> · <code>Nav2 Docking</code> · <code>AprilTag</code> · <code>Gazebo Harmonic</code> · <code>Python 3</code>
+<summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a></summary>
+<br>Technical notes and project pages for Linux kernel, ROS 2, embedded systems, and robotics projects. Generated with Hexo.<br>
+<code>HTML</code> · <code>CSS</code> · <code>JavaScript</code> · <code>GitHub Pages</code>
 </details>
 
 <details>
-<summary><a href="https://github.com/Quchaosheng/Quchaosheng.github.io"><strong>Quchaosheng.github.io</strong></a></summary>
-<br>Technical notes and project documentation on Linux kernel, ROS 2, embedded systems, and robotics.<br>
-<code>HTML</code> · <code>CSS</code> · <code>JavaScript</code> · <code>GitHub Pages</code>
+<summary><a href="https://github.com/Quchaosheng/ros2-apriltag-docking-demo"><strong>ros2-apriltag-docking-demo</strong></a></summary>
+<br>AprilTag docking with 6 admission guards (including pose-jump with angle wrapping); Guard is re-evaluated during the active task, not just at start.<br>
+<code>ROS 2 Jazzy</code> · <code>Nav2 Docking</code> · <code>AprilTag</code> · <code>Gazebo Harmonic</code> · <code>Python 3</code>
 </details>
 <!-- ALL_PROJECTS:END -->
 
